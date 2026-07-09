@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 # ── Konstanten ─────────────────────────────────────────────────────────────────
 PUBLIC_APP_BASE_URL = os.getenv(
     "PUBLIC_APP_BASE_URL",
-    "https://allweeelll-307619780865.europe-west3.run.app"
+    "https://telllmeeesevn.onrender.com"
 ).rstrip("/")
 
 SANDBOX_WEBAPP_URL = os.getenv(

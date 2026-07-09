@@ -21,7 +21,7 @@ if RENDER_EXTERNAL_URL:
 elif WEBHOOK_URL:
     BASE_URL = WEBHOOK_URL.rstrip("/")
 else:
-    BASE_URL = "https://allweeelll-307619780865.europe-west3.run.app"
+    BASE_URL = "https://telllmeeesevn.onrender.com"
 
 ARCHIVE_MINI_APP_URL = f"{BASE_URL}/archive"
 
