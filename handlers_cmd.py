@@ -81,7 +81,7 @@ _savecode_locks: dict[str, asyncio.Lock] = {}
 
 PUBLIC_APP_BASE_URL = os.getenv(
     "PUBLIC_APP_BASE_URL",
-    "https://allweeelll-307619780865.europe-west3.run.app"
+    "https://telllmeeesevn.onrender.com"
 ).rstrip("/")
 
 SCANNER_WEBAPP_URL = os.getenv(
@@ -1393,7 +1393,7 @@ async def cmd_livevoice(update: Update, context: ContextTypes.DEFAULT_TYPE):
         InlineKeyboardButton(
             "ðŸŽ™ï¸ Queen Live Voice Ã¶ffnen",
             web_app=WebAppInfo(
-                url="https://telllmeeedrei.onrender.com/livevoice"
+                url="https://telllmeeesevn.onrender.com/livevoice"
             )
         )
     ]])
@@ -1854,7 +1854,7 @@ async def cmd_diagnose(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton(
             "🔍 System-Diagnose öffnen", 
-            web_app=WebAppInfo(url="https://huggyooo-telllmeeedrei-bot.hf.space/diagnose")
+            web_app=WebAppInfo(url="https://telllmeeesevn.onrender.com/diagnose")
         )],
         [InlineKeyboardButton("📊 Schnell-Check (Text)", callback_data="diagnose:quick")]
     ])

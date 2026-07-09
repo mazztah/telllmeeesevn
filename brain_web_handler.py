@@ -22,7 +22,7 @@ async def cmd_brainweb(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [
                 InlineKeyboardButton(
                     "🌐 Brain Dashboard öffnen",
-                    url="https://huggyooo-telllmeeedrei-bot.hf.space/brain"
+                    url="https://telllmeeesevn.onrender.com/brain"
                 )
             ],
             [
@@ -43,7 +43,7 @@ async def cmd_brainweb(update: Update, context: ContextTypes.DEFAULT_TYPE):
         logger.error(f"cmd_brainweb Fehler: {e}")
         await update.message.reply_text(
             "🧠 Brain Web Interface:\n"
-            "https://huggingface.co/spaces/huggyooo/Telllmeeedrei_BOT/static/brain.html"
+            "https://telllmeeesevn.onrender.com/brain"
         )
 
 
