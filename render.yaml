@@ -1,13 +1,30 @@
 services:
   - type: web
-    name: telllmeeesechs
-    runtime: python
-    buildCommand: pip install -U pip && pip install -r requirements.txt
-    startCommand: gunicorn main:app -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT --timeout 120 --workers 1
+    name: telllmeeesevn
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter
     healthCheckPath: /ping
+    autoDeploy: true
     envVars:
       - key: USE_WEBHOOK
         value: "false"
-      - key: PYTHON_VERSION
-        value: "3.11.0"
-
+      - key: DATA_DIR
+        value: /home/user/app/data
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OWNER_CHAT_ID
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: PUBLIC_APP_BASE_URL
+        sync: false
