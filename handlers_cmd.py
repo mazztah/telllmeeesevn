@@ -1938,7 +1938,7 @@ async def cmd_jobqueen(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def cmd_landme(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Öffnet die reine Filip Makarczyk Landing Page (dedizierter Service)"""
-    LANDINGPAGE_URL = "https://jhjjhdkulandhfdfdpagefjdsh-307619780865.europe-west3.run.app/"
+    LANDINGPAGE_URL = "https://landingpagefm.onrender.com/"
 
     keyboard = InlineKeyboardMarkup([
         [
@@ -1965,7 +1965,7 @@ async def cmd_landme(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def cmd_immotracker(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Öffnet das KI-Immo-Terminal (immoticker) als WebApp-Popup."""
-    IMMOTICKER_URL = "https://immoticker-307619780865.europe-west1.run.app/"
+    IMMOTICKER_URL = "https://immoticker.onrender.com/"
 
     keyboard = InlineKeyboardMarkup([
         [
